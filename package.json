@@ -1,0 +1,35 @@
+{
+  "name": "flappynerd",
+  "version": "0.0.1",
+  "description": "Server for the flappynerd game.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5",
+    "pg-promise": "^4.0.0",
+    "vows": "^0.9.0-rc3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "vows --spec",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cnheider/flappynerd.git"
+  },
+  "keywords": [
+    "flappynerd",
+    "flappy",
+    "nerd",
+    "jump"
+  ],
+  "author": "cnheider",
+  "bugs": {
+    "url": "https://github.com/cnheider/flappynerd/issues"
+  },
+  "homepage": "https://flappynerd.net",
+  "engines" : {
+    "node" : "0.12.x"
+  }
+}

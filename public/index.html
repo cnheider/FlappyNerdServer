@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>FlappyNerd</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/flappynerd.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.16/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <a href="#" id="header_logo" title="FlappyNerd_logo">
+        <img src="https://raw.githubusercontent.com/cnHeider/FlappyNerd/master/UI/logo.png?					token=APRoYt65232cqhaYCal3QcUUqLDfnJeeks5XEqDdwA%3D%3D" />
+        <img src="https://raw.githubusercontent.com/cnHeider/FlappyNerd/master/FlappyNerd/app/src/main/res/mipmap-xxxhdpi/logotext.png" />
+      </a>
+    </div>
+
+    <div id="wrapper">
+      <div id="left">
+        <h1>Leaderboard</h1>
+        <i>most flaps</i>
+        <div id="leaderboard"></div>
+        <script type="text/babel" src="scripts/leaderboard.js"></script>
+      </div>
+      <div id="middle">
+        <h1>Nerds Live!</h1>
+        <div id="nerdslive"></div>
+        <script type="text/babel" src="scripts/nerdslive.js"></script>
+      </div>
+      <div id="right">
+        <h1>Game Mode</h1>
+        <form action="">
+          <input type="radio" name="gm" value="timetrial"> Time Trial
+          <br> Time:
+          <input type="time" name="firstname">
+          <br>
+          <input type="radio" name="gm" value="airtime"> AirTime Challenge
+          <br> Height:
+          <input type="number" name="firstname" style="width:45%">
+          <br>
+          <br>
+          <div style="text-align: center;">
+            <input id="fly" type="image" src="https://raw.githubusercontent.com/cnHeider/FlappyNerd/master/FlappyNerd/app/src/main/res/mipmap-xxxhdpi/button_off.png" alt="Submit" width="30%" height="30%" style="margin-right:2em;">
+            <input id="reset" type="image" src="https://raw.githubusercontent.com/cnHeider/FlappyNerd/master/UI/Button_reset_off.png" width="30%" height="30%">
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <div id="footer">
+    </div>
+
+</html>

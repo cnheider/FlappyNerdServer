@@ -1,0 +1,96 @@
+.myButton {
+    -moz-box-shadow: inset 0px 34px 0px -15px #b54b3a;
+    -webkit-box-shadow: inset 0px 34px 0px -15px #b54b3a;
+    box-shadow: inset 0px 34px 0px -15px #b54b3a;
+    background-color: #a73f2d;
+    border: 1px solid #241d13;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 23px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #7a2a1d;
+}
+
+
+.background {
+
+}
+
+body {
+    background-image: url("http://flappycreator.com/default/bg.png");
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+  	background-color: #5DDF72;
+}
+
+
+.header a{
+  height: 200px;
+
+}
+
+#header_logo img {
+  padding-top: 0.5em;
+ 	display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+#wrapper{
+  padding-top: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+#left, #right, #middle {
+  margin-left: 0.5em;
+  float: left;
+  background: #FFAA23;
+
+  width: 23%;
+}
+
+#middle{
+  width: 50%
+}
+
+#right{
+  text-align: left;
+}
+
+h1{
+  font-family:PixelFont;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+@font-face {
+    font-family: 'PixelFont'; /*a name to be used later*/
+    src:url('PixelFont.ttf'); /*URL to font*/
+}
+
+#liveList{
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nerdItem{
+  float: left;
+  width: 200px;
+  padding: 20px;
+}
+
+.NerdAvatar{
+  height: auto;
+  width: 160px;
+}
