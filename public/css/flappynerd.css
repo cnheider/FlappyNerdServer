@@ -32,7 +32,7 @@ body {
  	display: block;
   margin: 0 auto;
   max-width: 200px;
-  height: auto;
+  height: inherit;
   position: relative;
   z-index: 1;
 }
