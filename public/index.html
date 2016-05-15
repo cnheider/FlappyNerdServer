@@ -1,7 +1,6 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
     <title>FlappyNerd</title>
@@ -13,15 +12,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
   </head>
-
   <body>
-    <div id="header">
-      <a href="#" id="header_logo" title="FlappyNerd_logo">
-        <img src="https://raw.githubusercontent.com/cnHeider/FlappyNerd/master/UI/logo.png?					token=APRoYt65232cqhaYCal3QcUUqLDfnJeeks5XEqDdwA%3D%3D" />
-        <img src="https://raw.githubusercontent.com/cnHeider/FlappyNerd/master/FlappyNerd/app/src/main/res/mipmap-xxxhdpi/logotext.png" />
-      </a>
-    </div>
-
+    <table>
+      <tr>
+        <td>
+          <div id="GamePIN">
+          </div>
+        </td>
+        <td>
+          <div id="header">
+            <a href="#" id="header_logo" title="FlappyNerd_logo">
+              <img src="https://raw.githubusercontent.com/cnHeider/FlappyNerd/master/UI/logo.png?					token=APRoYt65232cqhaYCal3QcUUqLDfnJeeks5XEqDdwA%3D%3D" />
+              <img src="https://raw.githubusercontent.com/cnHeider/FlappyNerd/master/app/src/main/res/mipmap-xxxhdpi/logotext.png" />
+            </a>
+          </div>
+        </td>
+        <td>
+          <div id="QR">
+          </div>
+        </td>
+      </tr>
+    </table>
     <div id="wrapper">
       <div id="left">
         <h1>Leaderboard</h1>
@@ -51,11 +62,10 @@
             <input id="reset" type="image" src="https://raw.githubusercontent.com/cnHeider/FlappyNerd/master/UI/Button_reset_off.png" width="30%" height="30%">
           </div>
         </form>
-
       </div>
     </div>
 
     <div id="footer">
+      <a href="https://github.com/cnHeider/FlappyNerdServer">Github</a>
     </div>
-
 </html>
