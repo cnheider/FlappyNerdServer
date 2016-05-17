@@ -13,8 +13,8 @@ router.get('/', function(req, res) {
   res.send('Nerd home page, here you can: /create, /delete, /avatar');
 });
 
-router.post('/create/:nerd_id', function (req, res) {
-  var tag = "/add call ";
+router.post('/signin/:nerd_id', function (req, res) {
+  var tag = "/signin call ";
   db.result("INSERT INTO nerd(nerd_id, name) VALUES ($1,$2)", [parseInt(req.params.nerd_id), req.body.name])
     .then(function (result) {
       console.log(tag + "RESULT: ", result )
