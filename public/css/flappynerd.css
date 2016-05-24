@@ -27,38 +27,30 @@ body {
   	background-color: #5DDF72;
 }
 
-
-.header a{
-  height: 200px;
-
-}
-
 #header_logo img {
   padding-top: 0.5em;
  	display: block;
   margin: 0 auto;
   max-width: 200px;
-  height: auto;
+  height: inherit;
   position: relative;
   z-index: 1;
 }
 
-#wrapper{
-  padding-top: 1em;
+#outerTable{
   width: 100%;
+  height: 100%;
   text-align: center;
 }
 
 #left, #right, #middle {
+  padding-top: 1em;
   margin-left: 0.5em;
   float: left;
   background: #FFAA23;
+  text-align: center;
 
-  width: 23%;
-}
-
-#middle{
-  width: 50%
+  width: 100%;
 }
 
 #right{
@@ -84,13 +76,17 @@ h1{
   padding: 0;
 }
 
+#footer{
+  background: #FFAA23;
+}
+
 .nerdItem{
   float: left;
-  width: 200px;
+  width: 130px;
   padding: 20px;
 }
 
 .NerdAvatar{
   height: auto;
-  width: 160px;
+  width: 130px;
 }
