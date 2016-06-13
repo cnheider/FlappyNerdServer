@@ -45,6 +45,15 @@ router.get('/live/:game_id', function (req, res) {
     });
 });
 
+router.post('/new/:game_id', function (req, res){
+  var tag = "/new call "
+  console.log('new game')
+  req.session.regenerate(function(err) {
+  // will have a new session here
+  })
+  res.send("new game")
+})
+
 router.post('/start/:game_id', function (req, res){
   var tag = "/start call "
   console.log('game started')

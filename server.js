@@ -1,14 +1,49 @@
-var fs = require('fs');
-var path = require('path');
-var express = require('express');
-var bodyParser = require('body-parser');
-var app = express();
+var fs = require('fs')
+var path = require('path')
+var express = require('express')
+var session = require('express-session')
+var bodyParser = require('body-parser')
+var compression = require('compression')
+var qr = require('qr-image');
+var app = express()
 
-app.set('port', (process.env.PORT || 3000));
+// SESSION
+var sess = {
+  secret: process.env.SECRET,
+  cookie: { maxAge: 60000 }
+}
+if(process.env.NODE_ENV === production){
+  app.set('trust proxy', 1)
+  sess.cookie.secure = true
+  app.use(compression())
+}
+app.use(session(sess))
 
-app.use('/', express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+//PORT heroku
+app.set('port', (process.env.PORT || 3000))
+
+//Use EJS
+app.set('views', express.static(path.join(__dirname, 'public/views');
+app.engine('html', require('ejs').renderFile);
+
+// Access the session as req.session
+app.get('/', function(req, res) {
+  var sid = req.session.id
+  res.render('pages/index',{
+        gamepin: sid,
+        qrurl: "tagline"
+    })
+})
+
+/*app.get('/qr/:text', function(req,res){
+   var code = qr.image(req.params.text, { type: 'png', ec_level: 'H', size: 10, margin: 0 });
+   res.setHeader('Content-type', 'image/png');
+   code.pipe(res);
+}*/
+
+//app.use('/', express.static(path.join(__dirname, 'public')))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}))
 
 // Additional middleware which will set headers that we need on each request.
 app.use(function(req, res, next) {
