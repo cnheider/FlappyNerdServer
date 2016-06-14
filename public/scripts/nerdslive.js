@@ -8,7 +8,7 @@ var Nerd = React.createClass({
         <br/>
         <i>Air time(ms):</i>
         <br/>
-        <progress value={this.props.air_time} max={this.props.goal}></progress>
+        <progress className="NerdProgressBar" value={this.props.air_time} max={this.props.goal}></progress>
         <br/>
         {this.props.air_time}/{this.props.goal}
       </div>
