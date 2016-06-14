@@ -13,6 +13,10 @@ router.get('/', function(req, res) {
   res.send('Game home page');
 });
 
+router.get('/id', function(req, res) {
+  res.json({id:req.session.id});
+});
+
 router.post('/flap/:game_id', function (req, res) {
   var tag = "/flap call "
   var flap = {
