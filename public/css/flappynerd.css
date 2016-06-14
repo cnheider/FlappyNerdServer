@@ -92,7 +92,8 @@ h1{
 }
 
 .NerdProgressBar{
+  float: left;
   width: 100px;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
 }
