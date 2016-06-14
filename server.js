@@ -10,7 +10,7 @@ var sess = {
   secret: process.env.SECRET,
   cookie: { maxAge: 60000 }
 }
-if(process.env.NODE_ENV === production){
+if(process.env.NODE_ENV === "production"){
   app.set('trust proxy', 1)
   sess.cookie.secure = true
 }
