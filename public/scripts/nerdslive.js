@@ -10,10 +10,10 @@ var Nerd = React.createClass({
         <img className="NerdAvatar" src={this.props.src} />
         </td>
         <td>
-        <i>Air time(ms):</i>
-        <br/>
         <progress className="NerdProgressBar" value={this.props.air_time} max={this.props.goal}></progress>
         <br/>
+        <br/>
+        <i>Air time(ms):</i>
         {this.props.air_time}/{this.props.goal}
         </td>
         </tr>
